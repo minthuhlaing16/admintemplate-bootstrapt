@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Template</title>
+    <!-- icon  -->
+    <link rel="icon" href="./assets/img/fav/favicon2.png" />
+    <!-- bootstrap css 1 js 1 -->
+    <link
+      rel="stylesheet"
+      href="./assets/libs/bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- jquery ui css 1 js 1  -->
+    <link
+      rel="stylesheet"
+      href="./assets/libs/jquery-ui-1.13.2.custom/jquery-ui.min.css"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start Site Setting  -->
+    <div></div>
+    <!-- End Site Setting  -->
+
+    <!-- Start Navbar -->
+    <div class="wrappers">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <button
+          type="button"
+          class="navbar-toggler ms-auto mb-2"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="nav">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- start left side bar  -->
+              <div
+                class="col-lg-2 col-md-3 fixed-top vh-100 overflow-auto leftsidebars"
+              >
+                <ul class="navbar-nav flex-column mt-4">
+                  <li class="nav-item nav-categories">Main</li>
+                  <li class="nav-item nav-categories">
+                    <a
+                      href="javascript:void(0);"
+                      class="nav-link text-white p-3 mb-2 sidebarlinks currents"
+                      ><i class="fas fa-cloud me-3"></i>Dashboard</a
+                    >
+                  </li>
+                  <li class="nav-item nav-categories">
+                    <a
+                      href="javascript:void(0);"
+                      class="nav-link text-white p-3 mb-2 sidebarlinks"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#download"
+                      ><i class="fas fa-download me-3"></i>Download
+                      <i class="fas fa-angle-left mores"></i
+                    ></a>
+                    <ul id="download" class="collapse">
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="nav-link text-white sidebarlinks"
+                          ><i class="fas fa-long-arrow-alt-right me-4"></i
+                          >Education</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="nav-link text-white sidebarlinks"
+                          ><i class="fas fa-long-arrow-alt-right me-4"></i
+                          >Software</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item nav-categories">
+                    <a
+                      href="javascript:void(0);"
+                      class="nav-link text-white p-3 mb-2 sidebarlinks"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#form"
+                      ><i class="fas fa-file me-3"></i>Form
+                      <i class="fas fa-angle-left mores"></i
+                    ></a>
+                    <ul id="form" class="collapse">
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="nav-link text-white sidebarlinks"
+                          ><i class="fas fa-long-arrow-alt-right me-4"></i>Att
+                          Form</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="nav-link text-white sidebarlinks"
+                          ><i class="fas fa-long-arrow-alt-right me-4"></i>Leave
+                          Form</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="nav-link text-white sidebarlinks"
+                          ><i class="fas fa-long-arrow-alt-right me-4"></i
+                          >Enrolls Form</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item nav-categories">
+                    <a
+                      href="javascript:void(0);"
+                      class="nav-link text-white p-3 mb-2 sidebarlinks"
+                      ><i class="fas fa-cloud me-3"></i>Widgets</a
+                    >
+                  </li>
+                  <li class="nav-item nav-categories">Ui Features</li>
+                  <li class="nav-item nav-categories">
+                    <a
+                      href="javascript:void(0);"
+                      class="nav-link text-white p-3 mb-2 sidebarlinks"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#articles"
+                      ><i class="fas fa-file me-3"></i>Articles
+                      <i class="fas fa-angle-left mores"></i
+                    ></a>
+                    <ul id="articles" class="collapse">
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="nav-link text-white sidebarlinks"
+                          ><i class="fas fa-long-arrow-alt-right me-4"></i
+                          >Post</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="javascript:void(0);"
+                          class="nav-link text-white sidebarlinks"
+                          ><i class="fas fa-long-arrow-alt-right me-4"></i
+                          >Announcement</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- end left side bar  -->
+
+              <!-- start top side bar -->
+              <div class="col-lg-10 col-md-9 fixed-top ms-auto topnavbars">
+                <div class="row">
+                  <div class="navbar">
+                    <!-- start quick search  -->
+                    <form action="" method="" class="">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          name="quicksearch"
+                          id="quicksearch"
+                          class="form-control border-0 shadow-none"
+                          placeholder="Search ID"
+                        />
+                        <div class="input-group-append">
+                          <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- end quick search  -->
+
+                    <!-- start notify & user account -->
+
+                    <!-- end notify & user account -->
+
+                    <!-- start mobile close btn -->
+
+                    <!-- end mobile close btn -->
+                  </div>
+                </div>
+              </div>
+              <!-- end top side bar -->
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- End Navbar  -->
+
+    <!-- Start Content Area  -->
+    <section></section>
+    <!-- End Content Area  -->
+
+    <!-- Start Footer Section  -->
+    <footer></footer>
+    <!-- End Footer Section  -->
+
+    <!-- Start Right Navbar  -->
+    <div></div>
+    <!-- End Right Navbar  -->
+
+    <!-- bootstrap css 1 js 1  -->
+    <script src="./assets/libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery js1  -->
+    <script src="./assets/libs/jquery/jquery-3.6.2.min.js"></script>
+    <!-- jquery ui css 1 js 1  -->
+    <script src="./assets/libs/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <!-- custom js -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
