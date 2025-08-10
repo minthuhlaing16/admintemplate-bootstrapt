@@ -121,3 +121,26 @@ a {
 /* end mobile close btn  */
 
 /* End Navbar  */
+
+/* Start Content Area  */
+
+/* start shortcut area  */
+.border-left-primarys {
+  border-left-width: 3px;
+  border-left-color: steelblue;
+}
+.border-left-successes {
+  border-left-width: 3px;
+  border-left-color: forestgreen;
+}
+.border-left-infos {
+  border-left-width: 3px;
+  border-left-color: skyblue;
+}
+.border-left-warnings {
+  border-left-width: 3px;
+  border-left-color: orangered;
+}
+/* end shortcut area  */
+
+/* End Content Area  */
