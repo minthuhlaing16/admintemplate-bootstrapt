@@ -61,4 +61,63 @@ a {
 }
 /* end leftside bar  */
 
+/* start notify & user account  */
+.dropdowns {
+  position: relative;
+}
+
+.dropdowns .dropdown-contents {
+  min-width: 230px;
+  background-color: #f6f6f6;
+
+  position: absolute;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 10;
+
+  display: none;
+}
+
+.dropdowns .dropdown-contents a {
+  color: #000;
+
+  display: block;
+
+  padding: 10px;
+}
+
+.dropdowns .dropdown-contents a:hover {
+  background-color: #ddd;
+}
+
+.dropdowns .dropdown-contents.show {
+  display: block;
+}
+
+/* end notify & user account */
+
+/* start mobile close btn  */
+.navbar .close-btns {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+
+  border-radius: 50%;
+  outline: none;
+
+  margin-right: 3px;
+  line-height: 22px;
+
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navbar .close-btns {
+    display: block;
+  }
+}
+/* end mobile close btn  */
+
 /* End Navbar  */
