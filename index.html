@@ -186,7 +186,12 @@
                           placeholder="Search ID"
                         />
                         <div class="input-group-append">
-                          <button type="submit" class="btn btn-primary">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-bs-toggle="modal"
+                            data-bs-target="#quicksearchmodal"
+                          >
                             <i class="fas fa-search"></i>
                           </button>
                         </div>
@@ -778,13 +783,12 @@
                         <h6 class="fw-bold text-primary text-uppercase mb-1">
                           Users
                         </h6>
-                      </div>
-                      <div class="col-auto">
                         <p class="h6 text-muted">Report</p>
                       </div>
-                    </div>
-                    <div>
-                      <div>animation chart</div>
+
+                      <div class="col-auto">
+                        <div id="gaugeusers"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -802,8 +806,8 @@
                         <p class="h6 text-muted">Report</p>
                       </div>
                     </div>
-                    <div>
-                      <div>animation chart</div>
+                    <div class="col-auto">
+                      <div id="gaugecustomers"></div>
                     </div>
                   </div>
                 </div>
@@ -821,8 +825,8 @@
                         <p class="h6 text-muted">Report</p>
                       </div>
                     </div>
-                    <div>
-                      <div>animation chart</div>
+                    <div class="col-auto">
+                      <div id="gaugeemployees"></div>
                     </div>
                   </div>
                 </div>
@@ -840,8 +844,8 @@
                         <p class="h6 text-muted">Report</p>
                       </div>
                     </div>
-                    <div>
-                      <div>animation chart</div>
+                    <div class="col-auto">
+                      <div id="gaugeinvestors"></div>
                     </div>
                   </div>
                 </div>
@@ -916,8 +920,15 @@
                     <h6 class="text-primary">Revenue Sources</h6>
                   </div>
                   <div class="card-body">
-                    <div>
-                      <p>circle chart</p>
+                    <div
+                      style="
+                        height: 250px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                      "
+                    >
+                      <canvas id="myChart"></canvas>
                     </div>
                     <div class="small text-center mt-2">
                       <span
@@ -971,9 +982,7 @@
                     </div>
                   </div>
                   <div class="card-body">
-                    <div>
-                      <p>line chart</p>
-                    </div>
+                    <div id="curve_chart" style="width: 100%"></div>
                   </div>
                 </div>
               </div>
@@ -1527,12 +1536,53 @@
     </div>
     <!-- End Right Navbar  -->
 
+    <!-- Start Modal Area -->
+    <div id="quicksearchmodal" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0">
+          <div class="modal-header">
+            <h6 class="modal-title">Result</h6>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a href="javascript:void(0);">WDF 1001</a>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Area -->
+
     <!-- bootstrap css 1 js 1  -->
     <script src="./assets/libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- jquery js1  -->
     <script src="./assets/libs/jquery/jquery-3.6.2.min.js"></script>
     <!-- jquery ui css 1 js 1  -->
     <script src="./assets/libs/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <!-- Google Charts js 1 -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <!-- justgage from github -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"
+    ></script>
+    <!-- Chartjs js 1 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- custom js -->
     <script src="js/app.js"></script>
   </body>
