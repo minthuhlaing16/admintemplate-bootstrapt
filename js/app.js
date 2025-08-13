@@ -1,3 +1,10 @@
+// Start Right Navbar
+const getsitesettings = document.getElementById("sitesettings");
+getsitesettings.addEventListener("click", function () {
+  document.body.classList.toggle("show-nav");
+});
+// End Right Navbar
+
 // Start Navbar
 
 // start top navbar
@@ -22,3 +29,11 @@ $(document).ready(function () {
   // end left sidebar
   // End Navbar
 });
+
+// Start Footer
+
+const getyear = document.getElementById("getyear");
+const getfullyear = new Date().getFullYear();
+getyear.textContent = getfullyear;
+
+// End Footer
